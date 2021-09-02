@@ -4,15 +4,15 @@ import 'leaflet/dist/leaflet.css'
 import 'leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css'
 import 'leaflet-defaulticon-compatibility'
 
+const center = { lat: 3.1399616034165456, lng: 101.77296128020288 }
+
 function SetMap({ smartMapLocation }) {
-  console.log('setmap')
   const map = useMap()
   map.setView(smartMapLocation, map._zoom)
   return null
 }
 
-const center = { lat: 3.1399616034165456, lng: 101.77296128020288 }
-const SmartMap = () => {
+function SmartMap() {
   const [smartMapLocation, setSmartMapLocation] = useState(center)
 
   return (
