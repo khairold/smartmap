@@ -29,7 +29,7 @@ const SmartMap = () => {
       dragend() {
         const marker = markerRef.current
         if (marker != null) {
-          setPosition(marker.getLatLng())
+          setMarkerPosition(marker.getLatLng())
         }
       },
     }),
